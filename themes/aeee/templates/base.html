@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+  <head>
+    <meta charset="utf-8" />
+    <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+  </head>
+
+  <body id="index" class="home">
+    <header id="banner" class="body">
+      <h2>中国矿业大学建筑环境与能源应用工程中外合作办学项目</h2>
+      <nav><ul>
+          <li><a href="/index.html">首页</a></li>
+          <li><a href="/pages/information.html">基本信息</a></li>
+          <li><a href="http://www.crs.jsj.edu.cn/index.php/default/approval/detail/716">办学资质</a></li>
+          <li><a href="/pages/brief.html">办学情况简介</a></li>
+          <!-- {% for pg in PAGES %} -->
+          <!-- <li{% if pg == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li> -->
+          <!-- {% endfor %} -->
+          <!-- {% if DISPLAY_CATEGORIES_ON_MENU -%} -->
+          <!-- {% for cat, null in categories %} -->
+          <!-- <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li> -->
+          <!-- {% endfor %} -->
+          <!-- {% endif %} -->
+      </ul></nav>
+    </header><!-- /#banner -->
+    {% block content %}
+    {% endblock %}
+    <section id="extras" class="body">
+      {% if LINKS %}
+      <div class="blogroll">
+        <h2>链接</h2>
+        <ul>
+          {% for name, link in LINKS %}
+          <li><a href="{{ link }}">{{ name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div><!-- /.blogroll -->
+      {% endif %}
+    </section><!-- /#extras -->
+
+    <footer id="contentinfo" class="body">
+      <address id="about" class="vcard body">
+        No.1, Daxue Road, Nanhu Campus, China University of Mining and Technology,<br/>
+        Xuzhou, Jiangsu Province     Postcode：221116
+      </address><!-- /#about -->
+    </footer><!-- /#contentinfo -->
+
+    {% include 'analytics.html' %}
+    {% include 'disqus_script.html' %}
+  </body>
+</html>

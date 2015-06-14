@@ -1,0 +1,1 @@
+pelican -r content -t themes/aeee/
