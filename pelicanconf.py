@@ -21,7 +21,7 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = ((u'中国矿业大学', 'http://www.cumt.edu.cn/'),
-         (u'Griffith University', 'http://www.griffith.edu.au/'),
+         (u'RMIT University', 'https://www.rmit.edu.au/'),
          (u'中华人民共和国教育部','http://www.moe.edu.cn/'),
          (u'中外合作办学监管工作信息平台','http://www.crs.jsj.edu.cn/index.php/default/index'),)
 
