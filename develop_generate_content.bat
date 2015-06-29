@@ -1,1 +1,1 @@
-pelican -r content -t themes/aeee/
+pelican -r content/ -t themes/aeee/

@@ -11,12 +11,12 @@
       <h2>中国矿业大学建筑环境与能源应用工程中外合作办学项目</h2>
       <nav><ul>
           <li><a href="/index.html">首页</a></li>
-          <li><a href="/pages/information.html">基本信息</a></li>
+          <!-- <li><a href="/pages/information.html">基本信息</a></li> -->
           <li><a href="http://www.crs.jsj.edu.cn/index.php/default/approval/detail/716">办学资质</a></li>
-          <li><a href="/pages/brief.html">办学情况简介</a></li>
-          <!-- {% for pg in PAGES %} -->
-          <!-- <li{% if pg == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li> -->
-          <!-- {% endfor %} -->
+          <!-- <li><a href="/pages/brief.html">办学情况简介</a></li> -->
+          {% for pg in PAGES %}
+          <li{% if pg == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li>
+          {% endfor %}
           <!-- {% if DISPLAY_CATEGORIES_ON_MENU -%} -->
           <!-- {% for cat, null in categories %} -->
           <!-- <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li> -->

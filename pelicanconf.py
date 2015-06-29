@@ -27,6 +27,6 @@ LINKS = ((u'中国矿业大学', 'http://www.cumt.edu.cn/'),
 
 DEFAULT_PAGINATION = False
 
-STATIC_PATHS = []
+STATIC_PATHS = ["static"]
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
