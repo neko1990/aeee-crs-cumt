@@ -17,5 +17,3 @@ RMIT驻澳使馆馆证明
 
 
 [RMIT资质证明-中英文.doc](/static/qualification/RMIT资质证明-中英文.doc)
-
-RMIT资质证明-中英文

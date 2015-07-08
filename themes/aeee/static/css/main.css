@@ -26,6 +26,8 @@ body {
     text-align: left;
 }
 
+body img {width: 100%}
+
 /* Headings */
 h1 {font-size: 2em }
 h2 {font-size: 1.571em}	/* 22px */
